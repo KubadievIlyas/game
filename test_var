@@ -1,0 +1,43 @@
+class Game:
+    def init(self, name, author, icon, version, author_link = None):
+        self.name = name
+        self.author = author
+        self.icon = icon
+        self.version = version
+        self.author_link = author_link
+
+
+class Start_menu:
+    def init(self, play_button, settings_button, exit_button, game):
+        self.play_button = play_button
+        self.settings_button = settings_button
+        self.exit_button = exit_button
+        self.game = game
+        
+    def str(self):
+        return f'{self.play_button}, {self.settings_button}, {self.exit_button}'
+
+class Scene1:
+    def init(self, nachalnaya_scena, choice_close, choice_leave):
+        self.nachalnaya_scena = nachalnaya_scena
+        self.choice_close = choice_close
+        self.choice_leave = choice_leave
+    def choice_close:
+        print("Ложка упала со стола, Антон наклоился поднять её и\
+        увидел выцарапанное имя мамы под столом")
+    def choice_leave:
+        print("Мама накричала на антона")
+        
+        
+class Scene2:
+    def init(self, vtoraya_scena, choice_take, choice_run):
+        self.vtoraya_scena = nachalnaya_scena
+        self.choice_take = choice_take
+        self.choice_run = choice_run
+    def choice_take:
+        print("Антон в испуге взял ператку")
+    def choice_run:
+        print("Антон убежал домой")
+    
+clas = Start_menu(1, 0, 0)
+print(clas)
